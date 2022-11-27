@@ -4,7 +4,7 @@ function TodoCounter() {
     return (
         <>
             <h2>
-                Has completado 2 de 3 TODOs
+                Completed 2 to 3
             </h2>
         </>
     )
