@@ -1,0 +1,9 @@
+.item{
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+}
+.item-text{
+    text-decoration: line-through;
+}
