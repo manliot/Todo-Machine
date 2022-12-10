@@ -1,11 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-
-import { CreateTodoButton } from "../CreateTodoButton";
-import { TodoCounter } from "../TodoCounter";
-import { TodoItem } from "../TodoItem";
-import { TodoList } from "../TodoList";
-import { TodoSearch } from "../TodoSearch";
+import { AppUI } from './AppUI';
 
 const defaultTodos = [
   { text: 'Cortar cebolla', completed: true },
@@ -34,7 +29,7 @@ function App() {
     })
   }
 
-  const completeTodos = (text) => {
+  const completeTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text)
 
     const newTodos = [...todos]
@@ -44,7 +39,7 @@ function App() {
 
   }
 
-  const deleteTodos = (text) => {
+  const deleteTodo = (text) => {
     const todoIndex = todos.findIndex(todo => todo.text === text)
     console.log(todoIndex)
     const newTodos = [...todos]
@@ -54,39 +49,15 @@ function App() {
   }
 
   return (
-    <div className='app-container'>
-      <div className='section-container'>
-        <section className='left-section'>
-          <h2>Create new task</h2>
-          <h3>Task Name</h3>
-          <input placeholder='Sacar a pasear a los perros' />
-          <CreateTodoButton />
-        </section>
-        <section className='right-section'>
-          <h2>Your Tasks</h2>
-          <TodoCounter
-            total={totalTodos}
-            completed={completedTodos}
-          />
-          <TodoSearch searchValue={searchValue} setsearchValue={setsearchValue} />
-          <TodoList>
-            {
-              searchedTodos.map(todo => (
-                <TodoItem
-                  text={todo.text}
-                  completed={todo.completed}
-                  key={todo.text}
-                  onComplete={() => completeTodos(todo.text)}
-                  onDelete={() => deleteTodos(todo.text)}
-                />
-              ))
-            }
-          </TodoList>
-
-        </section>
-      </div>
-
-    </div>
+    <AppUI
+      totalTodos={totalTodos}
+      completedTodos={completedTodos}
+      searchValue={searchValue}
+      setsearchValue={setsearchValue}
+      searchedTodos={searchedTodos}
+      deleteTodo={deleteTodo}
+      completeTodo={completeTodo}
+    />
   );
 }
 
