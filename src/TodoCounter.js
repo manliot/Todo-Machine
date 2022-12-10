@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TodoCounter() {
+function TodoCounter({ total, completed }) {
     return (
         <>
             <h2>
-                Completed 2 to 3
+                Completed {completed} to {total}
             </h2>
         </>
     )
