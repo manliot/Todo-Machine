@@ -1,21 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { TodoContext } from '../TodoContext';
 import { CreateTodoButton } from "../CreateTodoButton";
 import { TodoCounter } from "../TodoCounter";
 import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
 
-function AppUI(
-    {
-        totalTodos,
-        completedTodos,
-        searchValue,
-        setsearchValue,
+function AppUI() {
+    const {
+        loading,
+        error,
         searchedTodos,
-        deleteTodo,
-        completeTodo
-    }
-) {
+        completeTodo,
+        deleteTodo
+    } = useContext(TodoContext)
+
     return (
         <div className='app-container'>
             <div className='section-container'>
@@ -27,12 +26,15 @@ function AppUI(
                 </section>
                 <section className='right-section'>
                     <h2>Your Tasks</h2>
-                    <TodoCounter
-                        total={totalTodos}
-                        completed={completedTodos}
-                    />
-                    <TodoSearch searchValue={searchValue} setsearchValue={setsearchValue} />
+                    <TodoCounter />
+                    <TodoSearch />
                     <TodoList>
+                        {error && <p>Desespérate, hubo un error...</p>}
+
+                        {loading && <p>Estamos cargando, no desesperes...</p>}
+
+                        {(!loading && !searchedTodos.length) && <p>¡Crea tu primer TODO!</p>}
+
                         {
                             searchedTodos.map(todo => (
                                 <TodoItem
@@ -45,7 +47,6 @@ function AppUI(
                             ))
                         }
                     </TodoList>
-
                 </section>
             </div>
 
