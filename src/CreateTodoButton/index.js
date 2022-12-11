@@ -1,13 +1,13 @@
 import React from 'react'
 
-function CreateTodoButton() {
-    const onClickButton = () => alert('Acá deberá crearse una task')
+function CreateTodoButton({ type }) {
+    
     return (
         <button
             className='create-btn'
-            onClick={onClickButton}
+            type={type}
         >
-            Create Task
+            Añadir
         </button>
     )
 }

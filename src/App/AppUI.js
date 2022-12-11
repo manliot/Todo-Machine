@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { TodoContext } from '../TodoContext';
-import { CreateTodoButton } from "../CreateTodoButton";
 import { TodoCounter } from "../TodoCounter";
+import { TodoForm } from '../TodoForm';
 import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
-import { Modal } from "../Modal"
+//import { Modal } from "../Modal"
 
 function AppUI() {
     const {
@@ -21,9 +21,7 @@ function AppUI() {
             <div className='section-container'>
                 <section className='left-section'>
                     <h2>Create new task</h2>
-                    <h3>Task Name</h3>
-                    <input placeholder='Sacar a pasear a los perros' />
-                    <CreateTodoButton />
+                    <TodoForm />
                 </section>
                 <section className='right-section'>
                     <h2>Your Tasks</h2>
@@ -50,7 +48,7 @@ function AppUI() {
                     </TodoList>
                 </section>
             </div>
-           {/*  <Modal >
+            {/*  <Modal >
                 <p> Tele Transpor</p>
             </Modal> */}
         </div>
