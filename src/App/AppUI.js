@@ -5,6 +5,7 @@ import { TodoCounter } from "../TodoCounter";
 import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
+import { Modal } from "../Modal"
 
 function AppUI() {
     const {
@@ -49,7 +50,9 @@ function AppUI() {
                     </TodoList>
                 </section>
             </div>
-
+           {/*  <Modal >
+                <p> Tele Transpor</p>
+            </Modal> */}
         </div>
     );
 }
