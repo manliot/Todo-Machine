@@ -1,0 +1,8 @@
+.create-btn {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: #F0F5FB;
+    font-weight: bold;
+}

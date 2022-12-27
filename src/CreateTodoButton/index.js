@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './CreateTodoButton.css'
 function CreateTodoButton({ type }) {
     
     return (
@@ -7,7 +7,7 @@ function CreateTodoButton({ type }) {
             className='create-btn'
             type={type}
         >
-            Añadir
+            Add
         </button>
     )
 }

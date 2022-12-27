@@ -5,6 +5,7 @@ import { TodoForm } from '../TodoForm';
 import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
+import { RightIlustration } from "../Assets/RightIlustration";
 //import { Modal } from "../Modal"
 
 function AppUI() {
@@ -22,6 +23,9 @@ function AppUI() {
                 <section className='left-section'>
                     <h2>Create new task</h2>
                     <TodoForm />
+                    <div className='left-ilustration-container'>
+                        <RightIlustration />
+                    </div>
                 </section>
                 <section className='right-section'>
                     <h2>Your Tasks</h2>
