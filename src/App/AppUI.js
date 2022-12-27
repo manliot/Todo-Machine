@@ -5,7 +5,7 @@ import { TodoForm } from '../TodoForm';
 import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoSearch } from "../TodoSearch";
-import { RightIlustration } from "../Assets/RightIlustration";
+import { RightIlustration } from "../Assets/LeftIlustration";
 //import { Modal } from "../Modal"
 
 function AppUI() {
