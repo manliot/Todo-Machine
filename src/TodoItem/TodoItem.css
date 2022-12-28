@@ -31,15 +31,11 @@
 }
 
 .check-btn-item {
-    width: 25px;
-    height: 25px;
     position: absolute;
-    left: -30px;
+    left: -32px;
 }
 
 .delete-btn-item{
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -30px;
+    right: -32px;
 }
