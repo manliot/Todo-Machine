@@ -21,14 +21,14 @@ function AppUI() {
         <div className='app-container'>
             <div className='section-container'>
                 <section className='left-section'>
-                    <h2>Create new task</h2>
+                    <h2 style={{ textAlign: 'center' }}>Create new task</h2>
                     <TodoForm />
                     <div className='left-ilustration-container'>
                         <RightIlustration />
                     </div>
                 </section>
                 <section className='right-section'>
-                    <h2>Your Tasks</h2>
+                    <h2 style={{ textAlign: 'center' }}>Your Tasks</h2>
                     <TodoCounter />
                     <TodoSearch />
                     <TodoList>
