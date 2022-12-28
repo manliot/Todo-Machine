@@ -1,0 +1,8 @@
+.search-input {
+    height: 38px;
+    margin-bottom: 18px;
+    border: none;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}

@@ -1,14 +1,45 @@
 .item {
     display: flex;
-    border-bottom-width: 1px;
-    border-bottom-color: black;
-    border-bottom-style: dashed;
+    border-width: 1px;
+    border-color: #dbd5d5;
+    border-style: solid;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    max-height: 50px;
+    white-space: nowrap;
+    width: 340px;
+    position: relative;
+    padding: 0 8px 0  8px;
+    box-sizing: border-box;
 }
 
-.item-text {
+.dash-text {
     text-decoration: line-through;
+}
+
+.item-txt {
+    width: 350px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item span:hover {
     cursor: pointer;
+}
+
+.check-btn-item {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -30px;
+}
+
+.delete-btn-item{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -30px;
 }
