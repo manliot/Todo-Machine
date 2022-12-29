@@ -14,7 +14,7 @@ function TodoSearch() {
                 className='search-input'
                 onChange={onSearchValueChange}
                 value={searchValue}
-                placeholder="Busca..."
+                placeholder="🔍 Buscar..."
             />
         </>
     )
