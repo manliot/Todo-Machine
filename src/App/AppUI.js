@@ -28,7 +28,7 @@ function AppUI() {
                     </div>
                 </section>
                 <section className='right-section'>
-                    <h2 style={{ textAlign: 'center' }}>Your Tasks</h2>
+                    <h2 style={{ textAlign: 'center', marginBottom:'18px' }}>Your Tasks</h2>
                     <TodoCounter />
                     <TodoSearch />
                     <TodoList>

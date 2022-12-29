@@ -19,7 +19,7 @@
 }
 
 .left-section {
-  padding: 25px;
+  padding: 48px 25px 25px 25px;
   box-sizing: border-box;
   width: 100%;
   border-radius: 15px 0 0 15px;
@@ -34,7 +34,7 @@
 
 .right-section {
   width: 100%;
-  padding: 25px;
+  padding: 48px 25px 25px 25px;
   background-color: #F0F5FB;
   border-radius: 0 15px 15px 0;
   box-sizing: border-box;
