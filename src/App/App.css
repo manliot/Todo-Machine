@@ -1,6 +1,6 @@
 .app-container {
   background-color: #FAFAFA;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
@@ -11,11 +11,11 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
   min-height: 400px;
   box-shadow: 10px 10px 12px 0px rgba(201, 199, 201, 1);
   border-radius: 15px;
   width: 900px;
+  max-height: calc(100vh - 100px);
 }
 
 .left-section {
@@ -30,6 +30,7 @@
   flex-direction: column;
   overflow: hidden;
   max-width: 450px;
+  max-height: inherit;
 }
 
 .right-section {
@@ -42,6 +43,7 @@
   flex-direction: column;
   max-width: 450px;
   text-align: center;
+  max-height: inherit;
 }
 
 .left-ilustration-container {

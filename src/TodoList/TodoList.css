@@ -2,12 +2,22 @@
   /*   border-color: black;
     border-width: 1px;
     border-style: dashed; */
-    height: 100%;
-    padding-top: 18px;
+  height: 100%;
+  padding-top: 18px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
-.ul-todoList{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.todoList-container::-webkit-scrollbar {
+  display: none;
+}
+
+.ul-todoList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
