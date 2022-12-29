@@ -1,6 +1,6 @@
 .app-container {
-  background-color: #FAFAFA;
-  height: 100%;
+  /* background-color: #FAFAFA; */
+  height: 100vh;
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
